@@ -15,7 +15,8 @@ const ResumeNew = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const PDF_PATH = '/YOONUS_AI_2025.pdf';
+  const PDF_PATH = '/SAI_PRASAD_JAVADEVELOPER.pdf';
+  
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -33,7 +34,7 @@ const ResumeNew = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = PDF_PATH;
-    link.download = 'YOONUS_AI_2025.pdf';
+    link.download = 'SAI_PRASAD_JAVADEVELOPER.pdf';
     link.click();
   };
 
@@ -135,14 +136,26 @@ const ResumeNew = () => {
                 </div>
               }
             >
-              {!error && !loading && (
-                <Page 
-                  pageNumber={1} 
-                  scale={width > 786 ? 1.7 : 0.6} 
+            {/* {!error && !loading && numPages && (
+              <Page
+                key={pageNumber}   // 🔥 VERY IMPORTANT
+                pageNumber={pageNumber}
+                scale={width > 786 ? 1.7 : 0.65}
+                renderTextLayer={false}
+                renderAnnotationLayer={false}
+              />
+            )} */}
+            {!error && !loading && numPages && (
+              <div className="flex justify-center w-full">
+                <Page
+                  key={pageNumber}
+                  pageNumber={pageNumber}
+                  scale={width > 1024 ? 1.3 : width > 768 ? 1 : 0.6}
                   renderTextLayer={false}
                   renderAnnotationLayer={false}
                 />
-              )}
+              </div>
+            )}
             </Document>
           </div>
 
@@ -172,9 +185,9 @@ const ResumeNew = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
             </div>
-            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>4.95/5</h3>
+            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>7.5/10</h3>
             <p className="text-white text-lg mt-2 font-semibold">GPA</p>
-            <p className="text-secondary">King Abdulaziz University</p>
+            <p className="text-secondary">BITS Kurnool</p>
           </div>
           
           <div className={`${styles.cardStyle} p-6 text-center`}>
@@ -183,9 +196,9 @@ const ResumeNew = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>5+</h3>
+            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>2+</h3>
             <p className="text-white text-lg mt-2 font-semibold">Years Experience</p>
-            <p className="text-secondary">Full-Stack & AI/ML</p>
+            <p className="text-secondary">Java Full-Stack & AWS Cloud</p>
           </div>
           
           <div className={`${styles.cardStyle} p-6 text-center`}>
@@ -194,7 +207,7 @@ const ResumeNew = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>$1M+</h3>
+            <h3 className={`${styles.gradientText} text-2xl font-bold group-hover:scale-110 transition-transform`}>10k+</h3>
             <p className="text-white text-lg mt-2 font-semibold">Revenue Generated</p>
             <p className="text-secondary">E-commerce Projects</p>
           </div>

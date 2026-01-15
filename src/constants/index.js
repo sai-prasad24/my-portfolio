@@ -58,11 +58,11 @@ import {
   portfolio3,
 
   // Company logos
-  sbx,
+  AKHM,
   sahl,
   ai,
   fiverr,
-  edunet,
+  capgemini,
   powerbi,
 
 } from "../assets";
@@ -99,7 +99,7 @@ export const navLinks = [
     id: "linkedin",
     title: "Linkedin",
     icon: "AiOutlineLinkedin", // Ant Design LinkedIn icon
-    url: "https://www.linkedin.com/in/yoonus-k/"
+    url: "https://www.linkedin.com/in/sai-prasad-mahendhrakar/"
   },
 ];
 
@@ -107,24 +107,25 @@ export const services = [
   { title: "AI/ML Engineering", icon: ai },
   { title: "Software Engineering", icon:se },
   { title: "Project Management", icon: pmp },
-  { title: "Algorithmic Trading", icon: python },
+  { title: "Java Development" , icon: java },
   { title: "Full-Stack Development", icon: reactjs },
  
 ];
 
 export const technologies = [
   // Programming Languages
-  { name: "Python", icon: python },
+//  { name: "Python", icon: python },
   { name: "JavaScript", icon: javascript },
-  { name: "C++", icon: cpp },
-  { name: "C#", icon: csharp },
+//  { name: "C++", icon: cpp },
+  //{ name: "C#", icon: csharp },
   { name: "Java", icon: java },
-  { name: "PHP", icon: php },
+  //{ name: "PHP", icon: php },
 
   // Frontend Technologies
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
   { name: "React JS", icon: reactjs },
+  //{ name: "Angular", icon: angularjs },
   { name: "Next.js", icon: nextjs },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Bootstrap", icon: bootstrap },
@@ -132,6 +133,7 @@ export const technologies = [
   // Backend Technologies
   { name: "Node JS", icon: nodejs },
   { name: "Laravel", icon: laravel },
+  //{name: "Java", icon: java},
   { name: "Django", icon: python }, // Using Python icon for Django
 
   // Databases
@@ -151,68 +153,72 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "IT Project Manager",
-    company_name: "Digital Awareness Corporation",
-    icon: edunet,
+    title: "Senior Software Engineer",
+    company_name: "Capgemini",
+    icon: capgemini,
     iconBg: "#E8F4FD",
-    date: "Oct 2025 - Present",
+    date: "Feb 2024 - Present",
     points: [
-      "Built a fully automated AI agent for government tender analysis, improving processing speed and efficiency by 300%.",
-      "Increased company sales by 80% through active customer engagement, improved communication, and client satisfaction efforts.",
-      "Managed full project lifecycles, ensuring alignment with business goals and consistent on-time delivery.",
-      "Drove the adoption of AI-driven automation tools to reduce manual work and scale operations across departments.",
+      "Designed and developed scalable backend services and automation solutions using Java and Spring Boot, improving system efficiency and reducing manual effort by over 60%.",
+      "Led the development of an AI-assisted automation module for tender analysis, significantly optimizing data processing workflows and reducing turnaround time.",
+      "Owned end-to-end feature development including requirement analysis, design, implementation, testing, and deployment in an Agile environment.",
+      "Collaborated closely with cross-functional teams (QA, DevOps, Product, and Business) to deliver high-quality, production-ready solutions on schedule.",
+      "Improved application performance and reliability through code optimization, debugging, and proactive monitoring.",
+      "Mentored junior developers and conducted code reviews to maintain coding standards and improve overall code quality."
     ],
   },
   {
-    title: "IT Manager",
-    company_name: "Starbucks (Arabian Gates)",
-    icon: sbx,
+    title: "Inten",
+    company_name: "AKHM Solutions",
+    icon: AKHM,
     iconBg: "#F0F0F0",
-    date: "Jan 2024 - Oct 2025",
+    date: "Aug 2023 - Dec 2023",
     points: [
-      "Engineered inventory forecasting with AI, boosting efficiency 30% and saving 15+ hours/branch/week.",
-      "Deployed a data-driven product categorization model that streamlined POS operations, cutting average customer checkout time by 20%.",
-      "Automated financial and data analytics by integrating predictive analytics with ERP systems, improving reporting accuracy by 25%.",
-      "Reduced external IT dependency by 80% by developing and leading internal training programs on AI-enabled tools.",
+     "Learned and applied core Java concepts, including OOP, collections, and exception handling, in real-world application development.",
+    "Developed a small Hotel Booking application using Spring Boot, implementing RESTful APIs for room availability, booking, and customer management.",
+    "Designed and managed relational databases using SQL, with data persistence handled through JPA and Hibernate.",
+    "Built responsive user interfaces using Angular and integrated them with backend REST APIs.",
+    "Implemented basic authentication, validation, and error handling to ensure secure and reliable application behavior.",
+    "Gained hands-on experience with full-stack development, debugging, and end-to-end application testing."
     ],
   },
-  {
-    title: "AI/ML Engineer (Project Lead)",
-    company_name: "Remote (Single-Client Engagement)",
-    icon: ai,
-    iconBg: "#E6F7FF",
-    date: "Feb 2025 - Aug 2025",
-    points: [
-      "Architected an NLP and PPO-based reinforcement learning trading system that boosted risk-adjusted returns by 80% in backtesting.",
-      "Engineered automated data pipelines to process daily market data, reducing feature engineering time by 40%.",
-      "Deployed a scalable multi-interface application using Docker and CI/CD, establishing model versioning and API endpoints.",
-      "Implemented a risk management framework (Sharpe Ratio, Max Drawdown) critical for model selection, saving 25% in potential losses.",
-    ],
-  },
-  {
-    title: "Full Stack Engineering Intern",
-    company_name: "Sahl Solutions",
-    icon: sahl,
-    iconBg: "#F0F7EF",
-    date: "Jun 2024 - Aug 2024",
-    points: [
-      "Engineered and integrated RESTful APIs using Django and React, enabling 3+ scalable features for the application and ERP ecosystem.",
-      "Designed optimized database schemas to support complex data, ensuring readiness for analytics and machine learning workloads.",
-      "Enhanced performance by optimizing database queries and React component structures, reducing average page load time by 15%.",
-    ],
-  },
-  {
-    title: "Assistant Manager (Data & Reporting)",
-    company_name: "Al-Atayeb",
-    icon: powerbi,
-    iconBg: "#E8F4FD",
-    date: "Jan 2018 - Jan 2019",
-    points: [
-      "Supported store operations and staff coordination, contributing to effective scheduling and payroll accuracy.",
-      "Organized financial datasets and applied Excel-based analytics to improve reporting efficiency and accuracy.",
-      "Streamlined attendance tracking systems, reducing payroll errors and ensuring data consistency.",
-    ],
-  },
+  // {
+  //   title: "AI/ML Engineer (Project Lead)",
+  //   company_name: "Remote (Single-Client Engagement)",
+  //   icon: ai,
+  //   iconBg: "#E6F7FF",
+  //   date: "Feb 2025 - Aug 2025",
+  //   points: [
+  //     "Architected an NLP and PPO-based reinforcement learning trading system that boosted risk-adjusted returns by 80% in backtesting.",
+  //     "Engineered automated data pipelines to process daily market data, reducing feature engineering time by 40%.",
+  //     "Deployed a scalable multi-interface application using Docker and CI/CD, establishing model versioning and API endpoints.",
+  //     "Implemented a risk management framework (Sharpe Ratio, Max Drawdown) critical for model selection, saving 25% in potential losses.",
+  //   ],
+  // },
+  // {
+  //   title: "Full Stack Engineering Intern",
+  //   company_name: "Sahl Solutions",
+  //   icon: sahl,
+  //   iconBg: "#F0F7EF",
+  //   date: "Jun 2024 - Aug 2024",
+  //   points: [
+  //     "Engineered and integrated RESTful APIs using Django and React, enabling 3+ scalable features for the application and ERP ecosystem.",
+  //     "Designed optimized database schemas to support complex data, ensuring readiness for analytics and machine learning workloads.",
+  //     "Enhanced performance by optimizing database queries and React component structures, reducing average page load time by 15%.",
+  //   ],
+  // },
+  // {
+  //   title: "Assistant Manager (Data & Reporting)",
+  //   company_name: "Al-Atayeb",
+  //   icon: powerbi,
+  //   iconBg: "#E8F4FD",
+  //   date: "Jan 2018 - Jan 2019",
+  //   points: [
+  //     "Supported store operations and staff coordination, contributing to effective scheduling and payroll accuracy.",
+  //     "Organized financial datasets and applied Excel-based analytics to improve reporting efficiency and accuracy.",
+  //     "Streamlined attendance tracking systems, reducing payroll errors and ensuring data consistency.",
+  //   ],
+  // },
 ];
 
 export const projects = [

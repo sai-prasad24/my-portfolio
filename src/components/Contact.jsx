@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import "../index.css";
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
 
 const InputField = ({ label, value, onChange, placeholder, name, type }) => (    <label className="flex flex-col">
     <span className="text-[#00CFFF] font-medium mb-3 font-['Inter']">{label}</span>
@@ -93,11 +95,23 @@ const Contact = () => {
     };
 
     // Send the email using EmailJS - make sure these IDs match exactly what's in your EmailJS dashboard
+    // emailjs.send(
+    //   "service_s9gwv6w", // Your EmailJS service ID 
+    //   "template_9gggt6g", // Your EmailJS template ID
+    //   templateParams,
+    //   "tJlYR9-tk6q6knSFY"
+    // )
     emailjs.send(
-      "service_30ivvu7", // Your EmailJS service ID 
-      "template_ltrhyvt", // Your EmailJS template ID
-      templateParams
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
+//     console.log(
+//   import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+//   import.meta.env.VITE_EMAILJS_SERVICE_ID,
+//   import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+// )
     .then(() => {
       setLoading(false);
       setConfirmation("Thank you! I will get back to you as soon as possible.");
@@ -157,15 +171,15 @@ const Contact = () => {
           <div className="flex flex-col gap-3 text-secondary">
             <div className="flex items-center gap-3">
               <span className="text-[#915EFF]">📧</span>
-              <span>yoonusk2001@gmail.com</span>
+              <span>mahendhrakarsai6@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[#915EFF]">📍</span>
-              <span>Jeddah, Saudi Arabia</span>
+              <span>Mumbai, Maharasthra</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[#915EFF]">💼</span>
-              <span>IT Manager at Starbucks | AI/ML Engineer</span>
+              <span>Senior Software Engineer at Capgemini | Java-AWS Engineer</span>
             </div>
           </div>
           
@@ -174,19 +188,19 @@ const Contact = () => {
             <h5 className="text-white text-[16px] font-medium mb-3">Professional Links</h5>
             <div className="flex flex-wrap gap-4">
               <button 
-                onClick={() => window.open("https://www.linkedin.com/in/yoonus-k/", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/sai-prasad-mahendhrakar/", "_blank")}
                 className={`${styles.primaryButton} !px-4 !py-2`}
               >
                 <span>LinkedIn</span>
               </button>
               <button 
-                onClick={() => window.open("https://github.com/yoonus-k", "_blank")}
+                onClick={() => window.open("https://github.com/sai-prasad24", "_blank")}
                 className="relative overflow-hidden bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#18122B] font-mono px-4 py-2 rounded-lg text-sm font-semibold shadow-lg transition-all duration-300 group"
               >
                 <span>GitHub</span>
               </button>
               <button 
-                onClick={() => window.open("mailto:yoonusk2001@gmail.com", "_blank")}
+                onClick={() => window.open("mailto:mahendhrakarsai6@gmail.com", "_blank")}
                 className={`${styles.secondaryButton} !px-4 !py-2`}
               >
                 <span>Direct Email</span>

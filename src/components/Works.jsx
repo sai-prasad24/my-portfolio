@@ -242,9 +242,7 @@ const Works = () => {
       
       <div className="w-full flex justify-center">
         <motion.p variants={fadeIn("", "", 0.1)} className="mt-3 text-secondary text-base md:text-lg max-w-2xl text-center leading-relaxed mb-8 font-['Inter']">
-          Following projects showcase my expertise in AI/ML engineering, full-stack development, 
-          and IT solutions. Each project demonstrates real-world problem solving, from algorithmic 
-          trading systems to enterprise software solutions, with links to repositories and live demos.
+          The projects below reflect my experience in designing and developing enterprise-ready applications using Java, Spring Boot, SQL, JPA/Hibernate, and Angular, with a strong focus on clean architecture, maintainability, and real-world use cases.
         </motion.p>
       </div>
 

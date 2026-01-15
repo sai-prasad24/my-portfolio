@@ -35,13 +35,13 @@ const Hero = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl mx-auto">
           {/* Hero Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-opacity-20 bg-[#00CFFF] backdrop-blur-sm rounded-full mb-6 border border-[#00CFFF] border-opacity-30">
-            <span className="text-[#00CFFF] text-sm font-medium">PMP® | AI Engineer | IT Project Manager</span>
+            <span className="text-[#00CFFF] text-sm font-medium">Softwae-Engineer at Capgemini </span>
           </div>
           
           {/* Main heading with premium styling */}
           <h1 className="font-sans font-extrabold text-5xl md:text-7xl text-white leading-tight tracking-tight mb-6" style={{ fontFamily: 'Poppins, Inter, Montserrat, Arial, sans-serif' }}>
-            I'm <span className="text-[#00CFFF]">Yoonus</span>,<br />
-            <span className="inline-block">AI Engineer &</span> <span className="inline-block">IT Project Manager</span>
+            I'm <span className="text-[#00CFFF]">SAI</span>,<br />
+            <span className="inline-block">Full-Stack Softwre Engineer &</span> <span className="inline-block">AWS Cloud Engineer</span>
           </h1>
           
           {/* Typewriter effect with improved styling */}
@@ -53,11 +53,9 @@ const Hero = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      "AI/ML Engineering",
+                      "Java Backend Development",
                       "Project Management",
-                      "Full-Stack Development",
                       "IT Management",
-                      "Algorithmic Trading"
                     ],
                     autoStart: true,
                     loop: true,
@@ -72,15 +70,18 @@ const Hero = () => {
           
           {/* Bio with premium styling */}
           <p className="text-[#b0b0b0] text-base md:text-lg font-mono max-w-2xl tracking-wide mb-10 leading-relaxed">
-            AI Engineer specializing in building and deploying predictive trading systems that deliver measurable returns. Experienced in developing full-stack AI solutions, from data pipelines and RL models to scalable MLOps workflows. Proven ability to apply machine learning to optimize business operations, achieving a 30% efficiency boost in inventory management.
+            Java Developer with strong expertise in building scalable, high-performance enterprise applications using Java, Spring Boot, and Microservices architecture. Experienced in developing robust backend systems, RESTful APIs, and secure business logic, with a focus on clean code, performance optimization, and maintainable design.
           </p>
           <p className="text-[#b0b0b0] text-base md:text-lg font-mono max-w-2xl tracking-wide mb-10 leading-relaxed">
-            As an IT Project Manager and PMP-certified professional, I bridge technology and business value by managing complex IT and AI initiatives from conception to delivery. I excel at leading cross-functional teams and effectively communicating between stakeholders and developers to achieve measurable results, including 80% sales increase through AI-driven automation and 300% improvement in government tender processing efficiency.
+            Skilled in delivering end-to-end solutions using Angular for responsive frontends and Redis caching to reduce latency and improve scalability. Adept at translating business requirements into technical solutions, collaborating with cross-functional teams, and improving system reliability and response times through effective architecture and microservice best practices.
           </p>
+           {/* <p className="text-[#b0b0b0] text-base md:text-lg font-mono max-w-2xl tracking-wide mb-10 leading-relaxed">
+            As an IT professional, I effectively collaborate with cross-functional teams, translating business requirements into technical solutions and delivering projects end-to-end. Proven ability to improve system efficiency, application response times, and overall reliability through thoughtful architecture, caching strategies, and microservice best practices.
+           </p> */}
           
           {/* CTA buttons with improved styling and shimmer effect */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <a href="/YOONUS_AI_2025.pdf" download className="relative overflow-hidden bg-transparent border-2 border-[#915EFF] text-[#915EFF] hover:bg-[#915EFF] hover:text-[#18122B] font-mono px-8 py-3 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 group">
+            <a href="/SAI_PRASAD_JAVADEVELOPER.pdf" download className="relative overflow-hidden bg-transparent border-2 border-[#915EFF] text-[#915EFF] hover:bg-[#915EFF] hover:text-[#18122B] font-mono px-8 py-3 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 group">
               <span className="relative z-10">Download Resume</span>
               <div className="absolute inset-0 w-0 bg-[#915EFF] opacity-30 transition-all duration-300 group-hover:w-full"></div>
             </a>

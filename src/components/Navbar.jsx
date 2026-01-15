@@ -240,11 +240,11 @@ const Navbar = () => {
               </div>
             </div>
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              YOONUS&nbsp;
+              SAI&nbsp;
               <span
                 className={`${showMobileView ? "hidden" : "hidden sm:block"}`}
               >
-                KIZHAKKETHIL , PMP®
+                PRASAD MAHENDHRAKAR
               </span>
             </p>
           </Link>
@@ -308,7 +308,7 @@ const Navbar = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-bold text-lg">
-                        YOONUS
+                        SAI
                       </h3>
                       <p className="text-secondary text-sm">Portfolio</p>
                     </div>
@@ -381,7 +381,7 @@ const Navbar = () => {
                   <p className="text-secondary text-sm mb-2">Connect with me</p>
                   <div className="flex justify-center gap-4">
                     <a
-                      href="https://github.com/yoonus-k"
+                      href="https://github.com/sai-prasad24/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-secondary hover:text-white transition-colors duration-200"
@@ -395,7 +395,7 @@ const Navbar = () => {
                       </svg>
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/yoonus-k/"
+                      href= "https://www.linkedin.com/in/sai-prasad-mahendhrakar/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-secondary hover:text-white transition-colors duration-200"
