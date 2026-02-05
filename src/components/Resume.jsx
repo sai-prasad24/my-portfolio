@@ -15,7 +15,7 @@ const ResumeNew = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const PDF_PATH = '/SAI_PRASAD_JAVADEVELOPER.pdf';
+  const PDF_PATH = '/Sai_Prasad_Java_SpringBoot_Resume.pdf';
   
 
   function onDocumentLoadSuccess({ numPages }) {
@@ -34,7 +34,7 @@ const ResumeNew = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = PDF_PATH;
-    link.download = 'SAI_PRASAD_JAVADEVELOPER.pdf';
+    link.download = 'Sai_Prasad_Java_SpringBoot_Resume.pdf';
     link.click();
   };
 
