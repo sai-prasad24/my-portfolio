@@ -83,8 +83,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 // Import resume
-import resumePDF from "./resume/SAI_PRASAD_JAVADEVELOPER.pdf";
-import resume_ai from "./resume/SAI_PRASAD_JAVADEVELOPER.pdf";
+import resumePDF from "./resume/Sai_Prasad_Java_SpringBoot_Resume.pdf";
+import resume_ai from "./resume/Sai_Prasad_Java_SpringBoot_Resume.pdf";
 
 export {
   // Company logos

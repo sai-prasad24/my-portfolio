@@ -26,7 +26,7 @@ const Footer = () => {
       { name: 'About', href: '#about' },
       { name: 'Experience', href: '#experience' },
       { name: 'Projects', href: '#work' },
-      { name: 'Resume', href: 'SAI_PRASAD_JAVADEVELOPER.pdf', external: true }, // Resume before Contact
+      { name: 'Resume', href: 'Sai_Prasad_Java_SpringBoot_Resume.pdf', external: true }, // Resume before Contact
       { name: 'Contact', href: '#contact' },
     ],
     connect: [
